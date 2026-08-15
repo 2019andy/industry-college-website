@@ -1,0 +1,616 @@
+{
+  "siteConfig": {
+    "name": "中跨数字贸易产业学院",
+    "fullName": "中跨数字贸易产业学院",
+    "description": "【已测试】通过后台管理修改了学院描述内容。",
+    "keywords": [
+      "产教融合",
+      "人工智能教育",
+      "AI人才培养",
+      "跨境电商专业",
+      "数字贸易产业学院",
+      "人工智能",
+      "AI应用开发",
+      "数字营销",
+      "供应链管理",
+      "现代产业学院",
+      "校企合作",
+      "教育科技"
+    ]
+  },
+  "navigation": [
+    {
+      "label": "首页",
+      "href": "/"
+    },
+    {
+      "label": "学院概况",
+      "href": "/about",
+      "children": [
+        {
+          "label": "学院简介",
+          "href": "/about#intro"
+        },
+        {
+          "label": "组织架构",
+          "href": "/about#organization"
+        },
+        {
+          "label": "领导团队",
+          "href": "/about#leadership"
+        },
+        {
+          "label": "发展历程",
+          "href": "/about#history"
+        }
+      ]
+    },
+    {
+      "label": "专业设置",
+      "href": "/programs",
+      "children": [
+        {
+          "label": "人工智能技术",
+          "href": "/programs#ai-tech"
+        },
+        {
+          "label": "AI应用开发",
+          "href": "/programs#ai-app"
+        },
+        {
+          "label": "跨境电子商务",
+          "href": "/programs#cross-border"
+        },
+        {
+          "label": "数字营销",
+          "href": "/programs#marketing"
+        },
+        {
+          "label": "供应链管理",
+          "href": "/programs#supply"
+        }
+      ]
+    },
+    {
+      "label": "产教融合",
+      "href": "/industry",
+      "children": [
+        {
+          "label": "合作企业",
+          "href": "/industry#partners"
+        },
+        {
+          "label": "实训基地",
+          "href": "/industry#training"
+        },
+        {
+          "label": "校企项目",
+          "href": "/industry#projects"
+        },
+        {
+          "label": "就业服务",
+          "href": "/industry#careers"
+        }
+      ]
+    },
+    {
+      "label": "师资力量",
+      "href": "/faculty"
+    },
+    {
+      "label": "新闻动态",
+      "href": "/news"
+    },
+    {
+      "label": "联系我们",
+      "href": "/contact"
+    }
+  ],
+  "heroStats": [
+    {
+      "value": 12,
+      "suffix": "+",
+      "label": "年办学积淀"
+    },
+    {
+      "value": 50000,
+      "suffix": "+",
+      "label": "培养学子"
+    },
+    {
+      "value": 200,
+      "suffix": "+",
+      "label": "合作企业"
+    },
+    {
+      "value": 6,
+      "suffix": "大",
+      "label": "专业方向"
+    }
+  ],
+  "aboutHighlights": [
+    {
+      "id": 1,
+      "title": "AI赋能产教融合",
+      "description": "以人工智能技术为核心驱动力，深度融合跨境电商产业场景，打造「AI+产业」创新型人才培养模式，服务国家数字经济发展战略。",
+      "icon": "Award"
+    },
+    {
+      "id": 2,
+      "title": "校企双主体协同",
+      "description": "由高校与中跨集团深度共建，企业真实项目贯穿教学全流程，实现专业设置与产业需求同频共振。",
+      "icon": "Building2"
+    },
+    {
+      "id": 3,
+      "title": "真实项目驱动",
+      "description": "引入AI大模型应用、跨境电商运营等真实业务场景，以项目制教学贯穿培养过程，学生在校即积累实战经验。",
+      "icon": "Briefcase"
+    },
+    {
+      "id": 4,
+      "title": "双师型师资团队",
+      "description": "高校学术导师与企业AI技术专家、跨境电商资深从业者联合授课，理论高度与实践深度兼备，确保教学内容与时俱进。",
+      "icon": "Users"
+    }
+  ],
+  "programs": [
+    {
+      "id": "ai-tech",
+      "name": "人工智能技术与应用",
+      "degree": "本科 / 专科",
+      "duration": "4年 / 3年",
+      "overview": "面向AI产业蓬勃发展的人才需求，培养掌握机器学习、深度学习、大模型应用开发等核心技能的AI工程技术人才。",
+      "curriculum": [
+        "Python程序设计",
+        "机器学习基础",
+        "深度学习与神经网络",
+        "大语言模型原理与应用",
+        "计算机视觉技术",
+        "AI产品化与工程实践"
+      ],
+      "career": [
+        "AI算法工程师",
+        "大模型应用开发工程师",
+        "AI产品经理",
+        "智能系统架构师"
+      ],
+      "featured": true
+    },
+    {
+      "id": "ai-app",
+      "name": "AI应用开发（产业方向）",
+      "degree": "本科 / 专科",
+      "duration": "4年 / 3年",
+      "overview": "聚焦AI技术在跨境电商、数字营销等产业场景的落地应用，培养具备AI+产业复合能力的实战型开发人才。",
+      "curriculum": [
+        "AI应用开发框架",
+        "Prompt工程与智能体开发",
+        "AI+跨境电商智能运营",
+        "AI数字人生成与营销",
+        "RAG检索增强生成",
+        "AI项目敏捷交付"
+      ],
+      "career": [
+        "AI应用开发工程师",
+        "智能体开发专家",
+        "AI运营增长黑客",
+        "AI解决方案顾问"
+      ],
+      "featured": true
+    },
+    {
+      "id": "cross-border",
+      "name": "跨境电子商务",
+      "degree": "本科 / 专科",
+      "duration": "4年 / 3年",
+      "overview": "面向数字贸易全球化趋势，培养掌握跨境电商全链路运营的复合型高级人才。",
+      "curriculum": [
+        "国际贸易实务",
+        "跨境电商平台运营",
+        "海外社交媒体营销",
+        "国际物流与供应链",
+        "跨境支付与结算",
+        "小语种商务沟通"
+      ],
+      "career": [
+        "跨境电商运营总监",
+        "独立站站长",
+        "Amazon/eBay大卖家",
+        "跨境供应链经理"
+      ],
+      "featured": true
+    },
+    {
+      "id": "international",
+      "name": "国际商务（数字贸易方向）",
+      "degree": "本科",
+      "duration": "4年",
+      "overview": "融合国际商务规则与数字贸易新业态，培养具备全球视野的国际化商务精英。",
+      "curriculum": [
+        "国际贸易理论与政策",
+        "数字贸易规则",
+        "国际市场营销",
+        "跨国商务谈判",
+        "国际商法",
+        "全球化运营管理"
+      ],
+      "career": [
+        "国际商务经理",
+        "外贸业务主管",
+        "跨境B2B销售总监",
+        "海外市场拓展经理"
+      ],
+      "featured": false
+    },
+    {
+      "id": "marketing",
+      "name": "数字营销（跨境方向）",
+      "degree": "本科 / 专科",
+      "duration": "4年 / 3年",
+      "overview": "聚焦海外数字营销生态，精通Google/Facebook/TikTok等海外主流平台营销玩法。",
+      "curriculum": [
+        "数字营销战略",
+        "SEO/SEM优化",
+        "海外社媒运营",
+        "信息流广告投放",
+        "品牌出海策划",
+        "数据分析与归因"
+      ],
+      "career": [
+        "海外数字营销总监",
+        "独立站增长黑客",
+        "社媒运营负责人",
+        "投放优化专家"
+      ],
+      "featured": true
+    },
+    {
+      "id": "supply",
+      "name": "供应链管理（国际物流）",
+      "degree": "本科 / 专科",
+      "duration": "4年 / 3年",
+      "overview": "对接国际物流与跨境供应链需求，打造具备全球供应链运筹能力的专业管理人才。",
+      "curriculum": [
+        "供应链管理原理",
+        "国际物流与仓储",
+        "跨境选品与采购",
+        "库存优化管理",
+        "ERP系统操作",
+        "海外仓运营"
+      ],
+      "career": [
+        "供应链总监",
+        "海外仓运营经理",
+        "国际物流主管",
+        "采购经理"
+      ],
+      "featured": false
+    }
+  ],
+  "partners": [
+    {
+      "id": 1,
+      "name": "阿里巴巴国际站",
+      "category": "跨境平台"
+    },
+    {
+      "id": 2,
+      "name": "Amazon全球开店",
+      "category": "跨境平台"
+    },
+    {
+      "id": 3,
+      "name": "eBay跨境电商",
+      "category": "跨境平台"
+    },
+    {
+      "id": 4,
+      "name": "TikTok Shop",
+      "category": "社交电商"
+    },
+    {
+      "id": 5,
+      "name": "Google出海",
+      "category": "数字营销"
+    },
+    {
+      "id": 6,
+      "name": "Meta海外营销",
+      "category": "数字营销"
+    },
+    {
+      "id": 7,
+      "name": "Shopify独立站",
+      "category": "独立站"
+    },
+    {
+      "id": 8,
+      "name": "菜鸟国际物流",
+      "category": "物流仓储"
+    },
+    {
+      "id": 9,
+      "name": "递四方速递",
+      "category": "物流仓储"
+    },
+    {
+      "id": 10,
+      "name": "连连跨境支付",
+      "category": "跨境支付"
+    },
+    {
+      "id": 11,
+      "name": "PayPal中国",
+      "category": "跨境支付"
+    },
+    {
+      "id": 12,
+      "name": "中跨集团",
+      "category": "产业运营"
+    },
+    {
+      "id": 13,
+      "name": "百度飞桨PaddlePaddle",
+      "category": "人工智能"
+    },
+    {
+      "id": 14,
+      "name": "商汤科技",
+      "category": "人工智能"
+    },
+    {
+      "id": 15,
+      "name": "科大讯飞",
+      "category": "人工智能"
+    },
+    {
+      "id": 16,
+      "name": "华为云AI",
+      "category": "人工智能"
+    },
+    {
+      "id": 17,
+      "name": "智谱AI",
+      "category": "人工智能"
+    },
+    {
+      "id": 18,
+      "name": "阿里云通义大模型",
+      "category": "人工智能"
+    }
+  ],
+  "facultyMembers": [
+    {
+      "id": 1,
+      "name": "张明远",
+      "title": "院长 / 教授",
+      "bio": "博士生导师，数字贸易领域权威专家，国家跨境电商综试区专家委员会委员，主持国家级课题10余项。",
+      "education": "复旦大学经济学博士",
+      "research": [
+        "数字贸易理论",
+        "跨境电商政策",
+        "产业经济"
+      ],
+      "avatar": ""
+    },
+    {
+      "id": 2,
+      "name": "李文华",
+      "title": "副院长 / 副教授",
+      "bio": "前Amazon华南区高级运营总监，15年跨境电商实战经验，操盘年销售额10亿+项目。",
+      "education": "中山大学MBA",
+      "research": [
+        "跨境平台运营",
+        "品牌出海",
+        "供应链管理"
+      ],
+      "avatar": ""
+    },
+    {
+      "id": 3,
+      "name": "王建国",
+      "title": "产业教授",
+      "bio": "中跨集团联合创始人、CEO，广东省跨境电商协会副会长，深耕外贸行业20余年。",
+      "education": "浙江大学EMBA",
+      "research": [
+        "外贸转型",
+        "企业战略",
+        "产教融合"
+      ],
+      "avatar": ""
+    },
+    {
+      "id": 4,
+      "name": "陈美琳",
+      "title": "专业带头人 / 高级经济师",
+      "bio": "前阿里巴巴国际站金牌讲师，10年B2B跨境营销经验，服务外贸企业超500家。",
+      "education": "广东外语外贸大学硕士",
+      "research": [
+        "国际营销",
+        "B2B跨境",
+        "客户开发"
+      ],
+      "avatar": ""
+    },
+    {
+      "id": 5,
+      "name": "刘志强",
+      "title": "AI专业带头人 / 教授",
+      "bio": "清华大学计算机博士，曾任职百度AI研究院，深度学习领域资深研究者，发表顶会论文20余篇，主持AI相关国家级课题5项。",
+      "education": "清华大学计算机科学博士",
+      "research": [
+        "大语言模型",
+        "计算机视觉",
+        "AI工程化"
+      ],
+      "avatar": ""
+    },
+    {
+      "id": 6,
+      "name": "赵晓峰",
+      "title": "产业教授 / AI技术总监",
+      "bio": "前商汤科技高级算法专家，8年AI产品落地经验，主导多个大模型行业应用项目，擅长AI技术与产业场景深度融合。",
+      "education": "浙江大学人工智能硕士",
+      "research": [
+        "大模型应用",
+        "智能体开发",
+        "AI+跨境电商"
+      ],
+      "avatar": ""
+    }
+  ],
+  "newsList": [
+    {
+      "id": 1,
+      "category": "学院要闻",
+      "title": "中跨数字贸易产业学院揭牌仪式隆重举行",
+      "date": "2026-06-18",
+      "summary": "学院与中跨集团深度共建的产业学院正式揭牌，标志着产教融合迈上新台阶，省教育厅、市商务局领导出席活动。",
+      "image": "",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "category": "校企合作",
+      "title": "我院与Amazon全球开店达成战略合作",
+      "date": "2026-06-05",
+      "summary": "Amazon将在我院设立跨境电商人才培养基地，共建实训课程，联合培养亚马逊运营专才。",
+      "image": "",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "category": "学生成果",
+      "title": "学子斩获全国跨境电商创新创业大赛一等奖",
+      "date": "2026-05-28",
+      "summary": "我院学子在第五届全国跨境电商创新创业大赛中脱颖而出，以创新商业模式和出色的运营数据斩获桂冠。",
+      "image": "",
+      "featured": false
+    },
+    {
+      "id": 4,
+      "category": "学术动态",
+      "title": "《中国数字贸易发展蓝皮书》编写工作启动",
+      "date": "2026-05-10",
+      "summary": "我院作为主编单位受邀参与行业蓝皮书编写工作，张明远院长担任编委会副主任。",
+      "image": "",
+      "featured": false
+    },
+    {
+      "id": 5,
+      "category": "学院要闻",
+      "title": "AI+跨境电商产业人才培养高峰论坛在我院举办",
+      "date": "2026-07-20",
+      "summary": "论坛汇聚百度、商汤、智谱AI等头部AI企业及跨境电商行业专家，共同探讨大模型时代产教融合新路径，我院发布了AI赋能跨境电商人才培养白皮书。",
+      "image": "",
+      "featured": true
+    },
+    {
+      "id": 6,
+      "category": "校企合作",
+      "title": "我院与百度飞桨共建AI实训基地正式挂牌",
+      "date": "2026-07-08",
+      "summary": "百度飞桨PaddlePaddle在我院设立AI实训基地，提供企业级深度学习框架与算力支持，联合培养AI应用开发人才。",
+      "image": "",
+      "featured": false
+    },
+    {
+      "id": 7,
+      "category": "学生成果",
+      "title": "学子团队斩获全国大学生AI应用创新大赛金奖",
+      "date": "2026-06-22",
+      "summary": "我院AI专业学生团队凭借「基于大模型的跨境选品智能助手」项目，在全国大学生AI应用创新大赛中夺得金奖。",
+      "image": "",
+      "featured": false
+    }
+  ],
+  "trainingBases": [
+    {
+      "id": 1,
+      "name": "跨境电商综合实训中心",
+      "area": "3000㎡",
+      "seats": "200+工位",
+      "systems": [
+        "亚马逊/速卖通真实店铺",
+        "独立站建站系统",
+        "ERP管理系统",
+        "数据化运营大屏"
+      ],
+      "description": "国内领先的沉浸式跨境电商实训环境，对接真实业务账号，实现「上学即上岗」。"
+    },
+    {
+      "id": 2,
+      "name": "海外数字营销实验室",
+      "area": "1500㎡",
+      "seats": "120+工位",
+      "systems": [
+        "Google Ads投放平台",
+        "Meta商务管理平台",
+        "TikTok Shop后台",
+        "数据分析看板"
+      ],
+      "description": "配备海外主流营销平台企业级账号，掌握千万元级广告投放方法论。"
+    },
+    {
+      "id": 3,
+      "name": "国际物流与供应链仿真实训室",
+      "area": "2000㎡",
+      "seats": "100+工位",
+      "systems": [
+        "WMS仓储管理系统",
+        "TMS运输管理系统",
+        "海外仓运营仿真",
+        "智能分拣设备"
+      ],
+      "description": "复刻跨境物流全链路场景，从选品采购到海外仓尾程派送全程实操。"
+    },
+    {
+      "id": 4,
+      "name": "人工智能与大模型实训中心",
+      "area": "2500㎡",
+      "seats": "150+工位",
+      "systems": [
+        "GPU算力集群（A100/H100）",
+        "大模型微调与部署平台",
+        "AI智能体开发环境",
+        "AI+跨境电商智能运营系统"
+      ],
+      "description": "配备企业级GPU算力与大模型开发全流程工具链，学生可直接参与大模型训练、微调与产业应用落地。"
+    }
+  ],
+  "contactInfo": {
+    "address": "广东省广州市番禺区大学城外环路",
+    "phone": "020-8888-8888",
+    "email": "admission@zhongkuan.edu.cn",
+    "workHours": "周一至周五 09:00 - 18:00",
+    "qqGroup": "123456789",
+    "wechatOfficial": "中跨数贸学院",
+    "coordinates": {
+      "lat": 23.0393,
+      "lng": 113.3876
+    }
+  },
+  "socialLinks": [
+    {
+      "name": "微信公众号",
+      "icon": "MessageCircle",
+      "href": "#"
+    },
+    {
+      "name": "官方微博",
+      "icon": "Twitter",
+      "href": "#"
+    },
+    {
+      "name": "抖音号",
+      "icon": "Music",
+      "href": "#"
+    },
+    {
+      "name": "LinkedIn",
+      "icon": "Linkedin",
+      "href": "#"
+    }
+  ]
+}
