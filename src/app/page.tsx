@@ -17,7 +17,7 @@ export default async function HomePage() {
   return (
     <main className="min-h-screen bg-white">
       <Header navigation={content.navigation} />
-      <HeroSection heroStats={content.heroStats} />
+      <HeroSection heroStats={content.heroStats} heroVideo={content.heroVideo} />
       <AboutSection aboutHighlights={content.aboutHighlights} />
       <ProgramsSection programs={content.programs} />
       <PartnersSection partners={content.partners} />

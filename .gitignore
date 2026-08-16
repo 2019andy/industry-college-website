@@ -42,3 +42,7 @@ yarn-error.log*
 
 # Auth credentials (contains password hash)
 content/auth.json
+
+# User uploaded images (runtime content, not code)
+public/uploads/*
+!public/uploads/.gitkeep

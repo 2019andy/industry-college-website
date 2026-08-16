@@ -23,17 +23,17 @@ export default function AdminTopbar({ userName }: { userName?: string }) {
   const config = titleMap[pathname] ?? { title: '管理后台', subtitle: undefined };
 
   return (
-    <header className="sticky top-0 z-30 flex items-center justify-between gap-4 bg-white/80 backdrop-blur-lg border-b border-dark-100 px-6 md:px-8 h-16">
-      <div className="lg:ml-0 ml-12">
-        <h1 className="text-base md:text-lg font-bold text-dark-900">{config.title}</h1>
-        {config.subtitle && <p className="text-xs text-dark-500 hidden md:block">{config.subtitle}</p>}
+    <header className="sticky top-0 z-30 flex items-center justify-between gap-3 bg-white/80 backdrop-blur-lg border-b border-dark-100 px-4 md:px-6 lg:px-8 h-14 md:h-16">
+      <div className="lg:ml-0 ml-12 min-w-0">
+        <h1 className="text-sm md:text-base lg:text-lg font-bold text-dark-900 truncate">{config.title}</h1>
+        {config.subtitle && <p className="text-xs text-dark-500 hidden md:block truncate">{config.subtitle}</p>}
       </div>
-      <div className="flex items-center gap-3">
-        <div className="flex items-center gap-2.5 rounded-xl bg-dark-50 px-3 py-1.5">
+      <div className="flex items-center gap-2 md:gap-3 shrink-0">
+        <div className="flex items-center gap-2 md:gap-2.5 rounded-xl bg-dark-50 px-2.5 md:px-3 py-1.5">
           <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-br from-primary-500 to-primary-700 text-white">
             <User className="h-3.5 w-3.5" />
           </div>
-          <span className="text-sm font-semibold text-dark-700">{userName || '管理员'}</span>
+          <span className="text-xs md:text-sm font-semibold text-dark-700 truncate max-w-[80px] md:max-w-none">{userName || '管理员'}</span>
         </div>
       </div>
     </header>

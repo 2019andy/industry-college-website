@@ -5,7 +5,17 @@ import { useContent } from '@/hooks/useContent';
 import { TextInput, SaveBar } from '@/components/admin/FormFields';
 import { Toast } from '@/components/admin/Toast';
 import type { SiteContent, NavItem } from '@/lib/types';
-import { Plus, Trash2, ChevronDown, ChevronRight, Link2, Menu } from 'lucide-react';
+import { useRouter } from 'next/navigation';
+import {
+  Plus,
+  Trash2,
+  ChevronDown,
+  ChevronRight,
+  Link2,
+  Menu,
+  FileEdit,
+  ExternalLink,
+} from 'lucide-react';
 
 export default function NavigationPage() {
   const { data, loading, saving, error, message, save, clearMessage } =
@@ -13,6 +23,23 @@ export default function NavigationPage() {
   const [local, setLocal] = useState<NavItem[] | null>(null);
   const [dirty, setDirty] = useState(false);
   const [expanded, setExpanded] = useState<Record<number, boolean>>({});
+  const router = useRouter();
+
+  // 一级页面路径 → 页面编辑器的后台路径映射
+  const PAGE_EDITOR_MAP: Record<string, string> = {
+    '/about': '/admin/page-editor/about',
+    '/programs': '/admin/page-editor/programs',
+    '/industry': '/admin/page-editor/industry',
+    '/faculty': '/admin/page-editor/faculty',
+    '/news': '/admin/page-editor/news',
+    '/contact': '/admin/page-editor/contact',
+  };
+
+  const getEditorPath = (href: string): string | null => {
+    if (!href) return null;
+    const clean = href.split('#')[0].split('?')[0];
+    return PAGE_EDITOR_MAP[clean] || null;
+  };
 
   useEffect(() => {
     if (data) {
@@ -129,8 +156,8 @@ export default function NavigationPage() {
           const hasChildren = childCount > 0;
           const isExpanded = expanded[index] ?? false;
           return (
-            <div key={index} className="rounded-2xl bg-white border border-dark-100 p-5 shadow-sm">
-              <div className="flex items-center gap-3">
+            <div key={index} className="rounded-2xl bg-white border border-dark-100 p-4 md:p-5 shadow-sm">
+              <div className="flex flex-wrap items-center gap-2 md:gap-3">
                 <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary-50 text-primary-600">
                   <Menu className="h-4 w-4" />
                 </div>
@@ -156,6 +183,27 @@ export default function NavigationPage() {
                     {isExpanded ? <ChevronDown className="h-4 w-4" /> : <ChevronRight className="h-4 w-4" />}
                   </button>
                 )}
+                {/* 预览前端页面 */}
+                <button
+                  type="button"
+                  onClick={() => window.open(item.href, '_blank')}
+                  className="hidden sm:flex h-9 w-9 items-center justify-center rounded-lg text-primary-600 hover:bg-primary-50"
+                  title="预览该页面（新窗口打开）"
+                >
+                  <ExternalLink className="h-4 w-4" />
+                </button>
+                {/* 页面编辑器入口（仅可识别的一级二级页面） */}
+                {getEditorPath(item.href) && (
+                  <button
+                    type="button"
+                    onClick={() => router.push(getEditorPath(item.href)!)}
+                    className="inline-flex h-9 items-center gap-1.5 rounded-lg bg-gradient-to-r from-primary-500 to-primary-600 px-3 text-white text-xs font-semibold hover:from-primary-600 hover:to-primary-700 shadow-sm"
+                    title="编辑该页面内容"
+                  >
+                    <FileEdit className="h-3.5 w-3.5" />
+                    页面编辑
+                  </button>
+                )}
                 <button
                   type="button"
                   onClick={() => removeItem(index)}
@@ -167,9 +215,9 @@ export default function NavigationPage() {
               </div>
 
               {hasChildren && isExpanded && (
-                <div className="mt-4 ml-12 space-y-3 border-l-2 border-dark-100 pl-4">
+                <div className="mt-4 ml-4 md:ml-12 space-y-3 border-l-2 border-dark-100 pl-4">
                   {item.children!.map((child, ci) => (
-                    <div key={ci} className="flex items-center gap-3">
+                    <div key={ci} className="flex flex-wrap items-center gap-2 md:gap-3">
                       <Link2 className="h-4 w-4 text-dark-400 shrink-0" />
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 flex-1">
                         <TextInput
@@ -183,10 +231,21 @@ export default function NavigationPage() {
                           placeholder="链接地址"
                         />
                       </div>
+                      {getEditorPath(child.href) && (
+                        <button
+                          type="button"
+                          onClick={() => router.push(getEditorPath(child.href)!)}
+                          className="inline-flex h-9 items-center gap-1 rounded-lg bg-gold-500 px-2.5 text-white text-[11px] font-semibold hover:bg-gold-600 shrink-0"
+                          title="编辑该页面内容"
+                        >
+                          <FileEdit className="h-3.5 w-3.5" />
+                          编辑页面
+                        </button>
+                      )}
                       <button
                         type="button"
                         onClick={() => removeChild(index, ci)}
-                        className="flex h-9 w-9 items-center justify-center rounded-lg text-red-500 hover:bg-red-50"
+                        className="flex h-9 w-9 items-center justify-center rounded-lg text-red-500 hover:bg-red-50 shrink-0"
                         title="删除子菜单"
                       >
                         <Trash2 className="h-4 w-4" />

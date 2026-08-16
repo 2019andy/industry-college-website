@@ -1,8 +1,8 @@
 {
   "siteConfig": {
-    "name": "中跨数字贸易产业学院",
-    "fullName": "中跨数字贸易产业学院",
-    "description": "【已测试】通过后台管理修改了学院描述内容。",
+    "name": "中跨数字贸易",
+    "fullName": "中跨数字贸易",
+    "description": "【已测试】通过后台管理修改了学院描述内容。2026",
     "keywords": [
       "产教融合",
       "人工智能教育",
@@ -15,7 +15,9 @@
       "供应链管理",
       "现代产业学院",
       "校企合作",
-      "教育科技"
+      "教育科技",
+      "OPC",
+      "AI短视频"
     ]
   },
   "navigation": [
@@ -128,6 +130,18 @@
       "label": "专业方向"
     }
   ],
+  "heroVideo": {
+    "enabled": true,
+    "mode": "player",
+    "videoUrl": "https://www.w3schools.com/html/movie.mp4",
+    "posterUrl": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20digital%20trade%20college%20campus%20building%20with%20glass%20facade%2C%20students%20collaborating%20with%20laptops%20showing%20global%20e-commerce%20data%20dashboards%2C%20professional%20atmosphere%2C%20warm%20golden%20hour%20lighting%2C%20high-end%20architectural%20photography%2C%20premium%20feel&image_size=portrait_4_3",
+    "autoplay": true,
+    "loop": true,
+    "muted": true,
+    "playsInline": true,
+    "controlPanelTitle": "走进中跨数字贸易产业学院",
+    "controlPanelSubtitle": "点击播放，3分钟了解AI赋能产教融合的创新办学模式"
+  },
   "aboutHighlights": [
     {
       "id": 1,
@@ -612,5 +626,468 @@
       "icon": "Linkedin",
       "href": "#"
     }
-  ]
+  ],
+  "aboutPage": {
+    "banner": {
+      "title": "学院概况",
+      "subtitle": "AI赋能产教融合，培育数字经济时代高素质人才",
+      "breadcrumb": "首页 / 学院概况"
+    },
+    "introTitle": "国家级现代产业学院",
+    "introTitleHighlight": "数字贸易人才培养高地",
+    "introPrimaryParagraph": "<p>管理卡时间fasdlkj</p>",
+    "introSecondaryParagraph": "学院始终以服务国家数字经济发展战略为己任，依托中跨集团深耕外贸行业二十余年的产业积累，联合阿里巴巴、Amazon、百度飞桨、商汤科技等200+头部企业，构建起从课程开发、师资共建、实训落地到就业出口的全链路产教融合生态，让学子在校期间即积累真实业务实战经验。",
+    "visionCards": [
+      {
+        "id": 1,
+        "icon": "Eye",
+        "label": "学院愿景",
+        "title": "成为中国数字贸易产教融合的领跑者",
+        "description": "打造全球数字贸易人才培养高地，让每位学子都成为数字经济时代的核心力量。",
+        "color": "from-primary-500 to-primary-700"
+      },
+      {
+        "id": 2,
+        "icon": "Target",
+        "label": "学院使命",
+        "title": "以AI赋能产业，以教育改变未来",
+        "description": "通过产教深度融合，培养掌握前沿技术与产业实战能力的复合型、创新型、应用型人才。",
+        "color": "from-gold-500 to-gold-600"
+      },
+      {
+        "id": 3,
+        "icon": "Heart",
+        "label": "办学理念",
+        "title": "真实项目驱动 · 校企协同育人",
+        "description": "坚持以学生发展为中心，以企业真实项目为载体，把课堂搬进产业一线，让学习即实战。",
+        "color": "from-primary-600 to-gold-500"
+      }
+    ],
+    "timeline": [
+      {
+        "id": 1,
+        "year": "2014",
+        "title": "建校奠基",
+        "description": "学院前身数字贸易学院正式成立，开启数字贸易人才培养征程。",
+        "icon": "GraduationCap",
+        "milestone": "起点"
+      },
+      {
+        "id": 2,
+        "year": "2018",
+        "title": "校企共建",
+        "description": "与中跨集团达成深度战略合作，首创校企双主体协同育人模式，企业项目正式引入课堂。",
+        "icon": "Building2",
+        "milestone": "突破"
+      },
+      {
+        "id": 3,
+        "year": "2021",
+        "title": "产业学院获批",
+        "description": "获批省级现代产业学院建设单位，办学模式获教育主管部门高度认可。",
+        "icon": "Trophy",
+        "milestone": "进阶"
+      },
+      {
+        "id": 4,
+        "year": "2024",
+        "title": "AI方向增设",
+        "description": "响应国家人工智能发展战略，增设AI技术与AI应用开发专业方向，构建「AI+产业」新生态。",
+        "icon": "Sparkles",
+        "milestone": "升级"
+      },
+      {
+        "id": 5,
+        "year": "2026",
+        "title": "国家级示范",
+        "description": "入选国家级现代产业学院示范建设单位，成为全国数字贸易产教融合标杆。",
+        "icon": "ShieldCheck",
+        "milestone": "标杆"
+      }
+    ],
+    "leadershipTitle": "领导团队",
+    "leadershipHighlight": "高校与企业双掌门掌舵",
+    "leadershipParagraph": "学院实行理事会领导下的院长负责制，理事会由高校与企业联合组成，确保办学方向与产业发展同频共振。",
+    "leadershipMembers": [
+      {
+        "id": 1,
+        "name": "张建华",
+        "position": "院长、党总支书记",
+        "tagline": "学术领航人",
+        "description": "经济学博士、博士生导师，曾任商学院院长。主持国家级课题5项，深耕数字经济研究二十年。",
+        "accent": "from-primary-500 to-primary-700"
+      },
+      {
+        "id": 2,
+        "name": "李明远",
+        "position": "执行院长、中跨集团副总裁",
+        "tagline": "产业实践掌舵人",
+        "description": "20年外贸实战经验，跨境电商行业资深操盘手，带领集团完成全球12个国家海外仓布局。",
+        "accent": "from-gold-500 to-gold-600"
+      },
+      {
+        "id": 3,
+        "name": "王晓云",
+        "position": "副院长（教学）",
+        "tagline": "教学质量总把关",
+        "description": "教育学硕士，曾任职教务处。主导构建「项目驱动 + 翻转课堂」的创新教学体系。",
+        "accent": "from-primary-600 to-gold-500"
+      },
+      {
+        "id": 4,
+        "name": "陈国强",
+        "position": "副院长（就业与产教融合）",
+        "tagline": "就业护航使者",
+        "description": "曾任阿里巴巴校园招聘负责人，200+校企合作资源网络，亲自督导毕业生高质量就业。",
+        "accent": "from-primary-500 to-primary-700"
+      }
+    ]
+  },
+  "programsPage": {
+    "banner": {
+      "title": "专业设置",
+      "subtitle": "六大专业方向直连数字经济黄金赛道",
+      "breadcrumb": "首页 / 专业设置"
+    },
+    "overviewTitle": "面向数字经济黄金赛道",
+    "overviewHighlight": "6大专业方向科学布局",
+    "overviewParagraph": "学院紧扣国家数字经济与人工智能发展战略，以「AI + 产业」为核心主线，设置人工智能、跨境电商、数字营销、供应链管理六大专业方向。校企双师联合开发课程体系，理论课程与实训课程比例1:1，毕业时即拥有可量化的项目经验作品集。",
+    "cultivationPathTitle": "四年四阶段成长路径",
+    "cultivationPathHighlight": "从入学到就业全程护航",
+    "cultivationPathParagraph": "",
+    "cultivationSteps": [
+      {
+        "id": 1,
+        "year": "大一",
+        "yearLabel": "第一年",
+        "title": "通识筑基",
+        "description": "夯实学科基础，掌握编程语言、贸易规则等核心工具，建立数字贸易行业全局认知。",
+        "highlights": [
+          "数学与英语基础强化",
+          "Python / JavaScript 入门编程",
+          "微观经济学 + 国际贸易实务",
+          "学长领航·企业参观"
+        ],
+        "color": "from-primary-500 to-primary-700",
+        "icon": "GraduationCap"
+      },
+      {
+        "id": 2,
+        "year": "大二",
+        "yearLabel": "第二年",
+        "title": "专业精进",
+        "description": "系统学习专业核心课程，进入实训基地开展项目实操，逐步建立技术或业务专长。",
+        "highlights": [
+          "机器学习 / 跨境电商运营等核心课",
+          "进入实训基地 + 仿真平台实操",
+          "双导师选课指导",
+          "参与学科竞赛孵化"
+        ],
+        "color": "from-gold-500 to-gold-600",
+        "icon": "BookOpen"
+      },
+      {
+        "id": 3,
+        "year": "大三",
+        "yearLabel": "第三年",
+        "title": "项目实战",
+        "description": "深度参与企业真实项目，承接跨境店铺运营或AI应用开发任务，积累可量化的实战成果。",
+        "highlights": [
+          "进入订单班 / 校企合作项目组",
+          "真账号店铺运营（产生真实业绩）",
+          "AI应用开发实训项目",
+          "暑期企业带薪实习"
+        ],
+        "color": "from-primary-600 to-gold-500",
+        "icon": "Target"
+      },
+      {
+        "id": 4,
+        "year": "大四",
+        "yearLabel": "第四年",
+        "title": "就业冲刺",
+        "description": "毕业设计与就业双轨并行，参加校招直通通道，以饱满履历冲刺名企 offer。",
+        "highlights": [
+          "双导师联合指导毕业论文",
+          "200+合作企业校招专场",
+          "简历 / 面试 / 职业规划 1对1辅导",
+          "就业质量跟踪1年"
+        ],
+        "color": "from-primary-500 to-primary-700",
+        "icon": "Briefcase"
+      }
+    ],
+    "ctaTitle": "开启您的数字经济职业未来",
+    "ctaHighlight": "立即咨询招生老师，锁定热门专业席位",
+    "ctaParagraph": "学院六大专业方向均设有严格的实践能力考核与项目结业答辩，结业即获得「学历学位证书 + 校企联合颁发的项目结业证书」双重认证。名额有限，专业方向按入学评估双向选择。"
+  },
+  "industryPage": {
+    "banner": {
+      "title": "产教融合",
+      "subtitle": "校企双主体协同育人，真实项目驱动教学",
+      "breadcrumb": "首页 / 产教融合"
+    },
+    "projectTitle": "四大校企合作模式",
+    "projectHighlight": "把企业真实项目搬进课堂",
+    "projectParagraph": "学院不是简单的「就业对接」，而是从招生、课程、实训到就业的全链路校企协同。学生在校期间就是「企业项目助理」，用真实业绩背书，让简历不再苍白。",
+    "projectModes": [
+      {
+        "id": 1,
+        "icon": "Users",
+        "title": "企业订单班",
+        "subtitle": "入学即就业的双向承诺",
+        "description": "由合作企业提出年度人才订单，学院定向选拔学生，企业与学院联合制定培养方案，学生从入学起就获得企业预录用通知书。",
+        "tags": [
+          "阿里巴巴跨境B2C订单班",
+          "百度AI订单班",
+          "TikTok电商订单班"
+        ],
+        "color": "from-primary-500 to-primary-700"
+      },
+      {
+        "id": 2,
+        "icon": "GraduationCap",
+        "title": "现代学徒制",
+        "subtitle": "双身份、双导师、双地点",
+        "description": "学生既是学院在校生，又是签约企业准员工，配备学术导师与企业师傅「双导师」，教室与企业「双地点」培养，学习收入两不误。",
+        "tags": [
+          "学生 + 准员工双身份",
+          "高校导师 + 企业师傅",
+          "企业发放生活补贴"
+        ],
+        "color": "from-gold-500 to-gold-600"
+      },
+      {
+        "id": 3,
+        "icon": "Target",
+        "title": "项目制教学",
+        "subtitle": "企业真实项目驱动学习",
+        "description": "企业把真实项目（Amazon店铺运营、大模型应用开发、海外社媒推广）引入课堂，学生以项目组方式承接，考核看真实数据而非纸面考试。",
+        "tags": [
+          "企业项目真实交付",
+          "业绩可量化记录",
+          "项目奖金 + 奖学金"
+        ],
+        "color": "from-primary-600 to-gold-500"
+      },
+      {
+        "id": 4,
+        "icon": "Handshake",
+        "title": "双导师制",
+        "subtitle": "学术理论 + 产业实战双轨并行",
+        "description": "每专业方向配备1名学术带头人（博士/教授）+ 1名产业带头人（企业高管/资深专家），课程由两位导师联合备课、联合授课、联合考核。",
+        "tags": [
+          "教授 + 企业总监联合授课",
+          "1:8导师师生比",
+          "每周产业导师进课堂"
+        ],
+        "color": "from-primary-500 to-primary-700"
+      }
+    ],
+    "careerTitle": "就业服务保障",
+    "careerHighlight": "98%就业率 · 1对1职业规划 · 终身校友网络",
+    "careerParagraph": "学院建立了完善的「入学即规划 → 在校即实战 → 毕业即就业 → 工作后跟踪」全周期就业服务体系，毕业生就业率连续五年保持在98%以上，起薪远超同类院校平均水平。",
+    "careerStats": [
+      {
+        "id": 1,
+        "icon": "TrendingUp",
+        "label": "就业率",
+        "stat": "98%",
+        "description": "毕业生就业率连续五年领先",
+        "color": "from-primary-500 to-primary-700"
+      },
+      {
+        "id": 2,
+        "icon": "Building2",
+        "label": "合作企业",
+        "stat": "200+",
+        "description": "覆盖跨境电商/AI/数字营销行业头部",
+        "color": "from-gold-500 to-gold-600"
+      },
+      {
+        "id": 3,
+        "icon": "Users",
+        "label": "校友网络",
+        "stat": "50000+",
+        "description": "覆盖全国一/二线城市 + 海外",
+        "color": "from-primary-600 to-gold-500"
+      },
+      {
+        "id": 4,
+        "icon": "UserCheck",
+        "label": "1对1服务",
+        "stat": "100%",
+        "description": "每一名学生配备专属职业规划师",
+        "color": "from-primary-500 to-primary-700"
+      }
+    ],
+    "careerSteps": [
+      {
+        "id": 1,
+        "icon": "Target",
+        "stepLabel": "第 1 步",
+        "title": "入学职业测评",
+        "description": "科学测评工具帮助学生认识自身兴趣与优势，选定适合的专业方向。"
+      },
+      {
+        "id": 2,
+        "icon": "BookOpen",
+        "stepLabel": "第 2 步",
+        "title": "在校项目积累",
+        "description": "通过订单班、学徒制、项目制教学，在学生阶段即积累真实项目成果与作品。"
+      },
+      {
+        "id": 3,
+        "icon": "BriefcaseBusiness",
+        "stepLabel": "第 3 步",
+        "title": "企业带薪实习",
+        "description": "大三暑期进入合作企业带薪实习，60% 学生通过实习拿到 offer。"
+      },
+      {
+        "id": 4,
+        "icon": "CheckCircle",
+        "stepLabel": "第 4 步",
+        "title": "1对1求职辅导",
+        "description": "简历修改、模拟面试、薪资谈判技巧，确保学生拿到理想 offer。"
+      },
+      {
+        "id": 5,
+        "icon": "Heart",
+        "stepLabel": "第 5 步",
+        "title": "终身就业支持",
+        "description": "毕业一年后职业发展跟踪，五年内可免费回炉重造，终身享受校友招聘资源。"
+      }
+    ]
+  },
+  "facultyPage": {
+    "banner": {
+      "title": "师资力量",
+      "subtitle": "高校学术导师与企业AI技术专家联合授课",
+      "breadcrumb": "首页 / 师资力量"
+    },
+    "teamStrengthTitle": "师资阵容实力",
+    "teamStrengthHighlight": "权威教授 + 产业实战专家双引擎",
+    "teamStrengthParagraph": "学院打造了一支「高学术背景 + 深产业经验」双轨并进的师资队伍，高级职称占比45%，双师型教师占比80%以上。",
+    "teamCards": [
+      {
+        "id": 1,
+        "icon": "GraduationCap",
+        "label": "学术权威",
+        "stat": "60+",
+        "description": "教授 / 副教授，硕博导师领衔",
+        "color": "from-primary-500 to-primary-700"
+      },
+      {
+        "id": 2,
+        "icon": "BriefcaseBusiness",
+        "label": "产业专家",
+        "stat": "120+",
+        "description": "来自合作企业的总监级导师",
+        "color": "from-gold-500 to-gold-600"
+      },
+      {
+        "id": 3,
+        "icon": "Award",
+        "label": "科研背景",
+        "stat": "85%",
+        "description": "教师拥有博士学位或行业顶级资质",
+        "color": "from-primary-600 to-gold-500"
+      },
+      {
+        "id": 4,
+        "icon": "Users",
+        "label": "双师配置",
+        "stat": "1:8",
+        "description": "师生比1:8，配备双导师组",
+        "color": "from-primary-500 to-primary-700"
+      }
+    ],
+    "dualMentorTitle": "双导师制",
+    "dualMentorHighlight": "学术导师 + 企业导师协同培养",
+    "dualMentorParagraph": "",
+    "academicMentor": {
+      "title": "学术导师",
+      "subtitle": "夯实理论根基，塑造批判性思维",
+      "description": "由高校教授、副教授、博士组成的学术导师队伍，负责专业理论体系、科学研究方法与学业规划辅导。",
+      "items": [
+        "主持/参与国家级科研项目，把握学科前沿",
+        "指导学科竞赛与创新创业计划立项",
+        "1对1辅导毕业论文与保研考研规划",
+        "开设系列前沿讲座与学术沙龙"
+      ]
+    },
+    "industryMentor": {
+      "title": "企业导师",
+      "subtitle": "传输实战经验，锻造职业核心能力",
+      "description": "由合作企业技术总监、运营总监、项目负责人组成的产业导师队伍，负责企业真实项目教学、求职与职业辅导。",
+      "items": [
+        "每周一次进课堂，讲授最新行业案例",
+        "领衔企业项目制教学与实训指导",
+        "提供企业实习与校招内推通道",
+        "1对1职业规划、简历与面试辅导"
+      ]
+    },
+    "recruitmentTitle": "加入我们的师资团队",
+    "recruitmentHighlight": "与顶尖学者和行业专家同行",
+    "recruitmentParagraph": "学院常年面向海内外招聘高水平学术带头人与资深产业导师，提供有竞争力的薪酬与广阔的职业发展空间。欢迎学者与产业精英加入我们。"
+  },
+  "newsPage": {
+    "banner": {
+      "title": "新闻动态",
+      "subtitle": "了解学院最新资讯与行业动态",
+      "breadcrumb": "首页 / 新闻动态"
+    },
+    "listTitle": "新闻动态",
+    "listHighlight": "学院发展的每一步都值得铭记",
+    "listParagraph": "关注中跨数字贸易产业学院的重要事件、校企合作动态、学生竞赛成果与行业深度报道。",
+    "categories": [
+      "学院要闻",
+      "校企合作",
+      "学生成果",
+      "学术动态"
+    ]
+  },
+  "contactPage": {
+    "banner": {
+      "title": "联系我们",
+      "subtitle": "开启您的数字贸易职业成长之旅",
+      "breadcrumb": "首页 / 联系我们"
+    },
+    "infoTitle": "联系信息",
+    "infoHighlight": "我们期待与您每一次交流",
+    "infoParagraph": "无论是招生咨询、校企合作还是学术交流，我们都将第一时间为您提供专业、真诚的服务。",
+    "formTitle": "在线咨询与预约参观",
+    "formHighlight": "留下联系方式，专属老师 24h 内联系您",
+    "formParagraph": "填写下方表单，招生老师将在24小时内致电与您沟通。我们承诺您的信息仅用于招生咨询与服务，不会向任何第三方泄露。",
+    "formSuccessText": "提交成功！感谢您的咨询，招生老师将在24小时内与您联系。",
+    "mapTitle": "学院位置",
+    "mapSubtitle": "欢迎预约参观，亲身感受中跨数字贸易产业学院产教融合的学习氛围。",
+    "trafficTips": [
+      {
+        "id": 1,
+        "icon": "Train",
+        "label": "地铁",
+        "content": "地铁4号线「大学城南站」D出口，步行5分钟即达学院南门。",
+        "color": "from-primary-500 to-primary-700"
+      },
+      {
+        "id": 2,
+        "icon": "Bus",
+        "label": "公交",
+        "content": "乘坐B17路 / 383路 / 801路公交车至「中跨学院站」下车即达。",
+        "color": "from-gold-500 to-gold-600"
+      },
+      {
+        "id": 3,
+        "icon": "Car",
+        "label": "自驾",
+        "content": "导航搜索「中跨数字贸易产业学院」，校内访客停车位预约后免费。",
+        "color": "from-primary-600 to-gold-500"
+      }
+    ],
+    "hotlineTitle": "招生咨询热线",
+    "hotlinePhone": "400-888-0000",
+    "hotlineHours": "工作时间 周一至周日 9:00-21:00",
+    "hotlineParagraph": "直接致电招生热线，立即获得专业的招生解答、专业选择建议与预约到校参观服务。"
+  }
 }
