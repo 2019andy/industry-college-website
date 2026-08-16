@@ -1,0 +1,57 @@
+#!/usr/bin/expect -f
+# 自动化: 用密码登录 SSH → 写入部署公钥 → 禁用密码登录 → 重启sshd
+
+set timeout 60
+set HOST     [lindex $argv 0]
+set USER     [lindex $argv 1]
+set PASSWORD [lindex $argv 2]
+set PUBKEY   [lindex $argv 3]
+
+spawn ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null \
+    -o PreferredAuthentications=password,keyboard-interactive \
+    -o PubkeyAuthentication=no \
+    ${USER}@${HOST}
+
+expect {
+    -re "(?i)password.*:" {
+        send -- "$PASSWORD\r"
+    }
+    -re "(?i)passphrase.*:" {
+        send -- "$PASSWORD\r"
+    }
+    "Permission denied" { puts "ERROR: Password rejected"; exit 1 }
+    timeout { puts "ERROR: Timeout waiting for password prompt"; exit 1 }
+    eof     { puts "ERROR: Disconnected"; exit 1 }
+}
+
+expect {
+    -re "#|\\$ $" {
+        # 1. 创建 .ssh 目录 + authorized_keys + 写入公钥（幂等）
+        send -- "mkdir -p ~/.ssh && chmod 700 ~/.ssh && touch ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys && grep -qxF '$PUBKEY' ~/.ssh/authorized_keys || echo '$PUBKEY' >> ~/.ssh/authorized_keys\r"
+    }
+    "Permission denied" { puts "ERROR: Incorrect password"; exit 1 }
+    timeout { puts "ERROR: Timeout waiting for shell"; exit 1 }
+}
+
+expect -re "#|\\$ $"
+send -- "echo STEP2_ok_\$USER\r"
+
+expect -re "STEP2_ok_"
+# 2. 禁用密码登录（保留密钥登录），备份原配置
+send -- "cp -n /etc/ssh/sshd_config /etc/ssh/sshd_config.bak 2>/dev/null; sed -i 's/^#\\?PasswordAuthentication.*/PasswordAuthentication no/' /etc/ssh/sshd_config; sed -i 's/^#\\?ChallengeResponseAuthentication.*/ChallengeResponseAuthentication no/' /etc/ssh/sshd_config; sed -i 's/^#\\?PubkeyAuthentication.*/PubkeyAuthentication yes/' /etc/ssh/sshd_config; echo 'sshd_config_patched'\r"
+
+expect -re "sshd_config_patched|#|\\$ $"
+send -- "grep -E 'PasswordAuthentication|PubkeyAuthentication' /etc/ssh/sshd_config\r"
+
+expect -re "#|\\$ $"
+# 3. 重启 sshd（根据 systemd / service 自适应）
+send -- "(command -v systemctl >/dev/null && systemctl restart sshd) || (command -v service >/dev/null && service ssh restart) || /etc/init.d/sshd restart; echo 'sshd_restarted_rc='\$?\r"
+
+expect -re "sshd_restarted_rc=\[0-9\]"
+# 4. 打印 success 标记
+send -- "echo SETUP_SUCCESS_$(cat /proc/sys/kernel/random/uuid 2>/dev/null || date +%s)\r"
+expect -re "SETUP_SUCCESS_"
+
+send -- "exit\r"
+expect eof
+puts "ALL_DONE"

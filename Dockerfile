@@ -53,9 +53,9 @@ COPY --from=builder --chown=nextjs:nodejs /app/content ./content
 # 创建 uploads 目录（挂载点）
 RUN mkdir -p /app/public/uploads && chown nextjs:nodejs /app/public/uploads
 
-# 健康检查
+# 健康检查（显式 127.0.0.1：alpine wget 默认 IPv6 first 会误判）
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
-    CMD wget --no-verbose --tries=1 --spider http://localhost:3000/ || exit 1
+    CMD wget --no-verbose --tries=1 --spider http://127.0.0.1:3000/ || exit 1
 
 USER nextjs
 
