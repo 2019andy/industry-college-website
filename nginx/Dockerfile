@@ -16,9 +16,9 @@ RUN mkdir -p /usr/share/nginx/html/_next/static /usr/share/nginx/html/uploads
 # SSL 证书目录（部署时挂载）
 RUN mkdir -p /etc/nginx/ssl
 
-# 健康检查
-HEALTHCHECK --interval=30s --timeout=5s --retries=3 \
-    CMD wget --no-verbose --tries=1 --spider http://localhost:80/ || exit 1
+# 健康检查（使用 /health 端点，不触发 HTTPS 跳转）
+HEALTHCHECK --interval=30s --timeout=5s --retries=3 --start-period=10s \
+    CMD wget --no-verbose --tries=1 --spider http://127.0.0.1:80/health || exit 1
 
 EXPOSE 80 443
 
